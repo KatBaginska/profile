@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,15 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Domine:wght@400..700&family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Domine:wght@400..700&family=Satisfy&display=swap"
+    rel="stylesheet">
   <title>Document</title>
   <style>
     .slide {
-      opacity: 0; /* Initially hide the slide */
-      transition: opacity 1s; /* Add a smooth transition for opacity */
+      opacity: 0;
+      /* Initially hide the slide */
+      transition: opacity 1s;
+      /* Add a smooth transition for opacity */
     }
 
     .active {
@@ -20,52 +24,49 @@
     }
   </style>
 </head>
+
 <body>
   <header>
-    <nav>
-      <div class="nav-bar">
-        <div class="logo">
-            <img src="./images/Dark_Back_Logo.png" alt="Space Image" width = 100px>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Recommendations</a></li>
-                <li><a href="">Contact Me</a></li>
-            </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="nav-bar">
+      <img class="logo" src="./images/Dark_Back_Logo.png" alt="Space Image">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Me</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact Me</a></li>
+      </ul>
+    </div>
   </header>
   <div class="name_picture slide">
-    <img class="hero" src="./images/here_picture2.png" alt="Pixel Myself" width=500px/ height="400px">
-    <div class ="text">
+    <img class="hero" src="./images/here_picture2.png" alt="Pixel Myself">
+    <div class="text">
       <h1 class="name_header"><br>Katarzyna<br>Baginska</h1>
       <br></br>
       <h2 class="sub-title">Junior Full-stack Dev</h2>
-      <p class="name_paragraph">I'm Kat, a fashion sales merchandiser by day and a coding sorcerer by night. I specialize in weaving the intricate threads of code as an aspiring full-stack developer and certified Salesforce Administrator. When the sun sets, I transform into a pixel sorcerer, creating magic in the world of digtal art.</p>
+      <p class="name_paragraph">I'm Kat, a fashion sales merchandiser by day and a coding sorcerer by night. I
+        specialize in weaving the intricate threads of code as an aspiring full-stack developer and certified Salesforce
+        Administrator. When the sun sets, I transform into a pixel sorcerer, creating magic in the world of digtal art.
+      </p>
+      <a class="button_clic_me2" href="https://www.github.com/KatBaginska/" target="_blank">Check my GitHub</a>
     </div>
   </div>
-  <button class="button_clic_me2" type="submit"><a href="https://www.github.com/KatBaginska/" target="_blank">Check my GitHub</a></button>
 
-  <div>
-    <div class="about_me slide">
-      <h2>About Me:</h2>
+
+  <div class="about_me slide">
+    <h2>About Me:</h2>
+    <div>
       <ul class="about_list">
         <li>🎓 Recently graduated with a degree in Game Animation.</li>
         <li>🚢 Experienced in merchandising and transportation (yes, I navigate the coding seas too).</li>
         <li>🌟 Strong technical and numeracy skills.</li>
         <li>💪 Self-driven and highly motivated to level up my career.</li>
-    </ul>
-        <img class="portrait" src="./images/1592763979781.jpg" alt="Pixel Myself" width=500px/ height="400px">
-      </div>
+      </ul>
+      <img class="portrait" src="./images/1592763979781.jpg" alt="Pixel Myself" width=500px/ height="400px">
     </div>
-    <div>
-
   </div>
+
   <form>
-    <p class="form-text"> Contact Me</p>
+    <h2 class="form-text"> Contact Me:</h2>
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname"><br>
     <label for="lname">Last name:</label><br>
@@ -74,8 +75,9 @@
     <input type="text" id="email" name="email"><br>
     <label for="message">Your Message:</label><br>
     <textarea type="text" id="message" name="message"></textarea><br>
-    <button type="submit" class ="button_clic_me">Submit</button>
+    <button type="submit" class="button_clic_me">Submit</button>
   </form>
+
   <footer>
     <a href="https://www.linkedin.com/in/katarzyna-baginska-0baa4a152/">
       <img src="./images/in.png" alt="LinkedIn" width=100px>
@@ -88,21 +90,22 @@
     </ul>
   </footer>
 
-<script>
-  window.addEventListener('scroll', () => {
+  <script>
+    window.addEventListener('scroll', () => {
       const slides = document.querySelectorAll('.slide');
       slides.forEach((slide) => {
-          const slideInAt = (window.scrollY + window.innerHeight) - slide.clientHeight / 2;
-          const slideBottom = slide.offsetTop + slide.clientHeight;
-          const isHalfShown = slideInAt > slide.offsetTop;
-          const isNotScrolledPast = window.scrollY < slideBottom;
-          if (isHalfShown && isNotScrolledPast) {
-              slide.classList.add('active');
-          } else {
-              slide.classList.remove('active');
-          }
+        const slideInAt = (window.scrollY + window.innerHeight) - slide.clientHeight / 2;
+        const slideBottom = slide.offsetTop + slide.clientHeight;
+        const isHalfShown = slideInAt > slide.offsetTop;
+        const isNotScrolledPast = window.scrollY < slideBottom;
+        if (isHalfShown && isNotScrolledPast) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
       });
-  });
-</script>
+    });
+  </script>
 </body>
+
 </html>

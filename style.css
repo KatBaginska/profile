@@ -1,352 +1,285 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: black;
+  overflow-y: auto;
 }
 
-@media (min-width: 1951px) and (max-width:3500px) {
-  header{
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
-  }
-  .name_picture {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    margin-left: 50px;
-  }
-
-  .name_header {
-    color: white;
-    line-height: 1.5;
-    font-family: "Aboreto", system-ui;
-    font-weight: 400;
-    font-size: 120px;
-    margin-top: auto;
-    bottom: 0;
-    right: 0;
-    padding-left: 30px;
-    align-items: flex-end;
-    align-self: center;
-    position: absolute;
-  }
-
-  /* start of navbar styling */
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 0px;
-  }
-
-  .logo {
-
-  }
-
-  .menu{
-    align-items: center;
-    margin-top: 15px;
-  }
-
-  .menu ul {
-    gap: 38px;
-    margin-right: 68px;
-    margin-top:30px;
-  }
-
-  .menu ul li {
-    font-family: "Aboreto", system-ui;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    list-style: none;
-    text-transform: uppercase;
-    display: inline;
-    padding: 40px;
-  }
-
-  .menu ul li a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .menu ul li a:hover {
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    text-decoration-color: #1f45f1;
-  }
-
-  /* end of navbar styling */
-
-  /*Styling of hero section*/
-  .hero{
-    margin-left: 80px;
-    width: auto;
-    height: 600px;
-    margin-top: 20px;
-  }
-
-  .text{
-    display: flex;
-    padding-left: 45px;
-  }
-
-  .name_paragraph {
-    color: white;
-    font-family: "Aboreto", system-ui;
-    font-size: 14px;
-    padding-left: 50px;
-    margin-left: 50px;
-  }
-
-  .sub-title{
-    font-family: "Aboreto", system-ui;
-    color: white;
-    padding-left: 45px;
-    padding-top: 0;
-  }
+header{
+  border-bottom: 2px solid white;
 }
 
-@media (min-width: 960px) and (max-width:1950px){
-  header{
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
-    overflow-y: scroll;
-  }
-  .name_picture {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    margin-left: 50px;
-  }
+.name_picture {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin-left: 50px;
+}
 
-  .name_header {
-    color: white;
-    line-height: 1.5;
-    font-family: "Aboreto", system-ui;
-    font-weight: 400;
-    font-size: 90px;
-    margin-top: auto;
-    bottom: 0;
-    right: 0;
-    padding-left: 10px;
-    align-items: flex-end;
-    align-self: center;
-  }
+.name_header {
+  color: white;
+  line-height: 1;
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-size: 90px;
+  padding-left: 10px;
+  align-items: flex-end;
+  align-self: center;
+  margin: 0;
+}
 
-  /* start of navbar styling */
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 0px;
-  }
+/* start of navbar styling */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
 
-  .logo {
+.logo {
+  width: 30px;
+  height: 30px;
+}
 
-  }
+ ul {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  width: 80%;
+  justify-content: flex-end;
+  column-gap: 30px;
+}
 
-  .menu{
-    align-items: center;
-    margin-top: 15px;
-  }
+ ul li {
+  font-family: "Aboreto", system-ui;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+}
 
-  .menu ul {
-    gap: 38px;
-    margin-right: 68px;
-    margin-top:30px;
-  }
+ ul li a {
+  text-decoration: none;
+  color: white;
+}
 
-  .menu ul li {
-    font-family: "Aboreto", system-ui;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    list-style: none;
-    text-transform: uppercase;
-    display: inline;
-    padding: 40px;
-  }
+ ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: #1f45f1;
+}
 
-  .menu ul li a {
-    text-decoration: none;
-    color: white;
-  }
+/* end of navbar styling */
 
-  .menu ul li a:hover {
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    text-decoration-color: #1f45f1;
-  }
+/*Styling of hero section*/
+.hero {
+  display: none;
+  margin-left: 60px;
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
-  /* end of navbar styling */
+.text {
+  display: block;
+  width: 100%;
+}
 
-  /*Styling of hero section*/
-  .hero{
-    margin-left: 60px;
-    width: auto;
-    height: 500px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  .text{
+@media (min-width: 1000px) {
+  .hero {
     display: block;
-
   }
 
-  .name_paragraph {
-    color: white;
-    font-family: "Aboreto", system-ui;
+  .text{
+    width: 70%;
+  }
+
+
+   ul li {
     font-size: 14px;
-    padding-left: 20px;
-    margin-right: 40px;
-
   }
 
-  .sub-title{
-    font-family: "Aboreto", system-ui;
-    color: white;
-    padding-left: 20px;
-    padding-top: 0;
+  .logo {
+    width: 40px;
+    height: 40px;
   }
+}
 
-  .button_clic_me{
-    align-items: center;
-    background-color: #ffffff;
-    border: 2px solid #111;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #111;
-    cursor: pointer;
-    display: flex;
-    font-family: "Aboreto", system-ui;
-    font-size: 20px;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
-    touch-action: manipulation;
-    margin-left: 40%;
-    text-decoration: none;
-  }
+.name_paragraph {
+  color: white;
+  font-family: "Aboreto", system-ui;
+  font-size: 14px;
+  padding-left: 20px;
+  margin-right: 40px;
 
-  .button_clic_me:hover:after {
-    transform: translate(0, 0);
-  }
+}
 
-  .button_clic_me:active {
-    background-color: #ffdeda;
-    outline: 0;
-  }
+.sub-title{
+  font-family: "Aboreto", system-ui;
+  color: white;
+  padding-left: 20px;
+  padding-top: 0;
+}
 
-  .button_clic_me:hover {
-    background-color: #929292;
-  }
+.button_clic_me{
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: "Aboreto", system-ui;
+  font-size: 20px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
 
-  .form-text{
-    color: white;
-    font-family: "Aboreto", system-ui;
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
-    font-size: 30px;
-  }
+.button_clic_me:hover:after {
+  transform: translate(0, 0);
+}
 
-  .portrait{
-    border-radius: 5px;
-    border: solid white 5px;
-    width: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 80px;
-    margin-right: 10px;;
-  }
+.button_clic_me:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
 
-  .about_me{
-    font-family: "Aboreto", system-ui;
-    color: #ffffff;
-    display: flex;
-    margin-right: 0;
-    font-size: 20px;
-    align-items: flex-end;
-    position: relative;
-    margin-left: 50px;
-  }
+.button_clic_me:hover {
+  background-color: #929292;
+}
 
-  .about_list{
-    margin-bottom: 120px;
+form{
+  width: 90%;
+  margin: 0 auto;
+}
 
-  }
+.form-text{
+  color: white;
+  font-family: "Aboreto", system-ui;
+  font-style: bold;
+  display: flex;
+  font-size: 30px;
+  width: 90%;
+  margin-bottom: 20px;
+}
 
-  label{
-    color: white;
-    font-family: "Aboreto", system-ui;
-    margin-left: 100px;
-  }
+.portrait{
+  border-radius: 5px;
+  border: solid white 5px;
+  width: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 80px;
+  margin-right: 10px;;
+}
 
-  input{
-    margin-bottom: 10px;
-    width: 80%;
-    margin-left: 100px;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    display: flex;
-    align-self: center;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  textarea{
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 20px;
-    margin-left: 100px;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-right: 50px;
-  }
+.about_me {
+  width: 90%;
+  font-family: "Aboreto", system-ui;
+  color: #ffffff;
+  margin-right: 0;
+  font-size: 20px;
+  margin: 50px auto;
+}
 
-  .button_clic_me2{
-    align-items: center;
-    background-color: #ffffff;
-    border: 2px solid #111;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #111;
-    cursor: pointer;
-    display: flex;
-    font-family: "Aboreto", system-ui;
-    font-size: 20px;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
-    touch-action: manipulation;
-    margin-left: 40%;
-    text-decoration: none;
-    margin-bottom: 20px;
-  }
+.about_me .portrait {
+  width: 30%;
+  max-width: 200px;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin: 0;
+}
 
-  .button_clic_me2:hover:after {
-    transform: translate(0, 0);
-  }
+.about_me ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 15px;
+  flex-wrap: wrap;
+  width: 70%;
+}
 
-  .button_clic_me2:active {
-    background-color: #ffdeda;
-    outline: 0;
-  }
+.about_me ul li {
+  width: 40%;
+}
 
-  .button_clic_me2:hover {
-    background-color: #929292;
-  }
-  footer{
-    border-top: 2px solid white;
-    padding-top: 10px;
-    margin-top: 20px;
-  }
+.about_me > div {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+label{
+  color: white;
+  font-family: "Aboreto", system-ui;
+}
+
+input{
+  margin-bottom: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  display: flex;
+  align-self: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 50px;
+}
+
+.button_clic_me2{
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: "Aboreto", system-ui;
+  font-size: 20px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  width: fit-content;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  text-decoration: none !important;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.button_clic_me2:hover {
+  background-color: #929292;
+}
+footer{
+  border-top: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
