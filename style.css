@@ -1,6 +1,10 @@
+@import url("./carousel.css");
+
 *{
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -282,4 +286,26 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gallery-cell {
+  width: 100%;
+}
+
+.gallery-cell {
+  width: 100%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }

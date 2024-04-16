@@ -1,0 +1,48 @@
+.carousel{
+  width:90%;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.card-container{
+  width: calc(100% - 16px);
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  gap: 8px;
+  flex: 0 0 calc(100% - 16px);
+}
+
+.carousel h2{
+  color: white;
+  font-family: "Aboreto", system-ui;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari and Opera */
+}
+
+.card{
+  min-width: 250px;
+  height: 400px;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:white;
+  border: 1px solid #4f5873;
+  font-family: "Aboreto", system-ui;
+  color: #4a544c;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.card:hover{
+  background: #adadad;
+}
